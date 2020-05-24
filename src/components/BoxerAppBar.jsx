@@ -3,6 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem } from '@materi
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -70,7 +71,9 @@ export default function BoxerAppBar(){
                             open={open}
                             onClose={handleClose}
                         >
-                            <MenuItem onClick={handleClose}>Profile</MenuItem>
+                            <MenuItem onClick={handleClose}>
+                                <Link to="/login">Login</Link>
+                            </MenuItem>
                             <MenuItem onClick={handleClose}>My account</MenuItem>
                         </Menu>
                     </div>
