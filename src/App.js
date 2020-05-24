@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Typography } from '@material-ui/core';
+import BoxerAppBar from './components/BoxerAppBar';
 
 function App() {
   return (
     <div className="App">
+      <BoxerAppBar />
       <Typography variant="h1" component="h1">
         Boxer
       </Typography>
@@ -12,7 +14,7 @@ function App() {
         Goal
       </Typography>
       <Typography variant="p" component="p">
-        Using the fitbit api (or whatever else can be throw in), compare weight progress over a set time.
+        Using the fitbit api (or whatever else can be throw in), compare weight progress over a set time.  Only reveal progress on a certain "weigh-in" day.
       </Typography>
     </div>
   );
